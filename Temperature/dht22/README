@@ -1,0 +1,26 @@
+1. Update raspberry PI repository
+
+sudo apt-get update
+sudo apt-get upgrade
+
+2. Install python3-dev y python3-pip to interat with the sensor
+
+sudo apt-get install python3-dev python3-pip
+
+3. Update setuptools
+
+sudo python3 -m pip install --upgrade pip setuptools wheel
+
+4. Install the Adafruit libraries
+
+sudo pip3 install Adafruit_DHT
+pip3 install adafruit-circuitpython-dht
+$ sudo apt-get install libgpiod2
+
+5. Install requests for REST API communication
+
+pip install requests
+
+5. Run the python3 command to execute the code
+
+python3 dht_simpletest.py
