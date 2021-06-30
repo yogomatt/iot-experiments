@@ -9,7 +9,7 @@ TEMPERATURE_REST_API_URL = 'http://192.168.0.102:8081/temperature'
 HUMIDITY_REST_API_URL = 'http://192.168.0.102:8081/humidity'
 
 # Initiate the dht device, with data pin connected to:
-dhtDevice = adafruit_dht.DHT22(board.D22)
+dhtDevice = adafruit_dht.DHT22(board.D22, use_pulseio=False)
 
 # you can pass DHT22 use_pulseio=False if you wouldn't like to use pulseio.
 # This may be necessary on a Linux single board computer like the Raspberry Pi,
@@ -18,7 +18,7 @@ dhtDevice = adafruit_dht.DHT22(board.D22)
 
 # Init the cvs file
 try:
-    file_path = '/home/pi/Documents/raspberry/temperature/dht22/logs/{0}.csv'.format(time.strftime('%y-%m-%d'))
+    file_path = './logs/{0}.csv'.format(time.strftime('%y-%m-%d'))
     f = open(file_path, 'a+')
     if os.stat(file_path).st_size == 0:
         f.write('Date,Time,Temperature,Humidity\r\n')
