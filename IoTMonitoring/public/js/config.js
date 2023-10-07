@@ -1,8 +1,8 @@
 module.exports = {
   service: {
-    app_host: '192.168.0.102',
+    app_host: '192.168.0.194',
     app_port: '8081',
-    app_url: 'http://192.168.0.102:8081',
+    app_url: 'http://192.168.0.194:8081',
     db_host: '192.168.0.100',
     db_port: '9042'
   },

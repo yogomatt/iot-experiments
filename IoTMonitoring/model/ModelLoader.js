@@ -3,7 +3,7 @@ var ExpressCassandra = require('express-cassandra')
 var client = ExpressCassandra.createClient({
   clientOptions: {
     localDataCenter: 'datacenter1',
-    contactPoints: ['192.168.0.100'],
+    contactPoints: ['192.168.0.163'],
     protocolOptions: { port: 9042 },
     keyspace: 'iotspace',
     queryOptions: {consistency: ExpressCassandra.consistencies.one},
