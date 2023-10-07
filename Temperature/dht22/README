@@ -15,7 +15,7 @@ sudo python3 -m pip install --upgrade pip setuptools wheel
 
 sudo pip3 install Adafruit_DHT
 pip3 install adafruit-circuitpython-dht
-$ sudo apt-get install libgpiod2
+sudo apt-get install libgpiod2
 
 5. Install requests for REST API communication
 
@@ -24,3 +24,6 @@ pip install requests
 5. Run the python3 command to execute the code
 
 python3 dht_simpletest.py
+
+## Reference:
+https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/python-setup
