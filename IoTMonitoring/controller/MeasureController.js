@@ -33,6 +33,8 @@ function findSensorSamples(req, res, type) {
       return
     }
 
+    res.setHeader("Content-Type", "application/json")
+
     if (result) {
       res.json(result)
       // console.log('Found sample: ' + JSON.stringify(result))
